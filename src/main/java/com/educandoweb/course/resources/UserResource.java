@@ -11,7 +11,6 @@ import com.educandoweb.course.entities.User;
 @RequestMapping(value = "/users")
 public class UserResource {
 
-	
 	//retorna repostas de requisições web
 	@GetMapping
 	public ResponseEntity<User> findAll(){
