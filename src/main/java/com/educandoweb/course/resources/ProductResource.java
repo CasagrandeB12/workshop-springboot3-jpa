@@ -27,7 +27,7 @@ public class ProductResource {
 	}
 	
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<Product> findById(@PathVariable Long id){ //aceota o id como parametro na URL
+	public ResponseEntity<Product> findById(@PathVariable Long id){ //aceita o id como parametro na URL
 		Product obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 		}
